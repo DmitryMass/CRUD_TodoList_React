@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&family=Lora:ital,wght@1,500;1,700&display=swap');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: linear-gradient(#0a205a, #010913);
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+.done {
+  background-color: rgb(34, 206, 34);
+}
+.flex__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.main {
+  text-align: center;
+  margin: 20px auto;
+  overflow: auto;
+  height: 300px;
+}
+
+.wrapper {
+  padding: 40px;
+  background: linear-gradient(#0036ca29, #cee9003a);
+  border-radius: 25px 0 25px 0;
+  width: 400px;
+}
+
+.list {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 12px 0px 12px 0px;
+  width: 60%;
+}
+.list::marker {
+  color: white;
+  font-size: 14px;
+}
+.list:hover {
+  text-shadow: 0 0 4px rgb(71, 59, 240);
+}
+.msgInput,
+.editInput {
+  border: none;
+  padding: 10px;
+  height: 20px;
+  background: white;
+  border-radius: 12px 0px 12px 0;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  width: 70%;
+  border-radius: 0 12px 0 12px;
+}
+
+.editInput {
+  border: none;
+}
+.inputActive {
+  border: 3px solid greenyellow;
+}
+.inputDisabled {
+  background: gray;
+}
+.inputDisabled::placeholder {
+  color: white;
+}
+
+#msgButton {
+  height: 40px;
+  border-radius: 12px 0px 12px 0px;
+  background: #1350f7;
+  color: white;
+}
+
+#editBtn {
+  height: 40px;
+  border: none;
+  border-radius: 12px 0px 12px 0px;
+  color: white;
+}
+
+.deleteBtn {
+  border: 1px solid red;
+  background: rgb(236, 6, 6);
+  border-radius: 12px 0px 12px 0px;
+  height: 32px;
+  width: 60px;
+}
+.editBtn {
+  border: 1px solid #ff9807;
+  background: #ffc107;
+  border-radius: 0px 12px 0 12px;
+  height: 32px;
+  width: 60px;
+}
+.editBtn__disabled {
+  background: gray;
+}
+.edit__block,
+.todo__block {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: rgb(221, 221, 221);
+  border: 1px solid;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 115);
+  border: 1px solid;
+}
