@@ -20,12 +20,16 @@ const Todo = ({ defaultMessage, defaultList }) => {
         onSubmit={(message) => addTodo(message)}
         onChangeTodo={updateTodo}
       />
-      <List
-        onDelete={deleteCurrentTodo}
-        list={list}
-        onStatusChange={changeStatus}
-        editTodo={editTodo}
-      />
+      {list.length === 0 ? (
+        <div className="data__loading">Data Loading, wait please...</div>
+      ) : (
+        <List
+          onDelete={deleteCurrentTodo}
+          list={list}
+          onStatusChange={changeStatus}
+          editTodo={editTodo}
+        />
+      )}
     </div>
   );
 };

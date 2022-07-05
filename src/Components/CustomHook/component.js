@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { create, deleteTodo, getTodoList, update } from '../Api/component';
 
 const useTodo = (defaultList) => {
-  const [list, setList] = useState(defaultList ? defaultList : '');
+  const [list, setList] = useState(defaultList);
 
   useEffect(() => {
     async function effect() {
